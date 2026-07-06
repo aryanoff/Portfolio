@@ -1,0 +1,12 @@
+.home-redirect {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    text-align: center;
+}
+
+.home-redirect a {
+    color: var(--primary-dark);
+    font-weight: 800;
+}

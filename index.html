@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Singh Rajpoot - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot logo" />
+                <img class="signature" src="assets/png-images/Aryan Signature.png" alt="Aryan Singh Rajpoot" />
+            </a>
+            <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+            <label class="menu-button" for="menu-toggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Pages/about/about.html">About</a></li>
+                <li><a href="Pages/project/projects.html">Projects</a></li>
+                <li><a href="Pages/qualificatioion/qualifications.html">Qualifications</a></li>
+                <li><a href="Pages/socialmedia/social-media.html">Social Media</a></li>
+                <li><a href="Pages/contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="home-page">
+        <section class="hero">
+        <div class="hero-image-container">
+            <img
+                src="./assets/bg/vecteezy_3d-abstract-digital-technology-blue-light-particles-wave_33164704.png"
+                alt=""
+                class="glow-bg"
+                aria-hidden="true"
+            />
+            <svg class="badge-connectors" viewBox="0 0 500 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="55"  y1="95"  x2="250" y2="240" />
+                <line x1="445" y1="95"  x2="250" y2="240" />
+                <line x1="55"  y1="430" x2="250" y2="360" />
+                <line x1="445" y1="430" x2="250" y2="360" />
+            </svg>
+            <img
+                src="./assets/png-images/mySketch.png"
+                alt="Aryan Singh Rajpoot"
+                class="hero-img"
+            />
+            <div class="badges-desktop">
+                <div class="skill-badge badge-top-left">
+                    <img class="badge-icon" src="./assets/png-images/fullstack.png" alt="" />
+                    <span>Full-Stack Dev</span>
+                </div>
+                <div class="skill-badge badge-top-right">
+                    <img class="badge-icon" src="./assets/png-images/Music Producer.png" alt="" />
+                    <span>Music Producer</span>
+                </div>
+                <div class="skill-badge badge-bottom-left">
+                    <img class="badge-icon" src="./assets/png-images/social-media_3893051.png" alt="" />
+                    <span>Social Media</span>
+                </div>
+                <div class="skill-badge badge-bottom-right">
+                    <img class="badge-icon" src="./assets/png-images/UIUX Design.png" alt="" />
+                    <span>UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+
+            <div class="hero-text">
+                <span class="eyebrow">Full-stack developer and creator</span>
+                <h1>Building clean websites and creative digital work.</h1>
+                <p>
+                    I am Aryan Singh Rajpoot. I create responsive websites, full-stack apps,
+                    UI designs, music projects, and social media content.
+                </p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="Pages/project/projects.html">View Projects</a>
+                    <a class="btn btn-secondary" href="Pages/contact/contact.html">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-strip" aria-label="Main skills">
+            <article>
+                <img src="assets/png-images/fullstack.png" alt="" />
+                <h2>Full-Stack Dev</h2>
+                <p>React, Vite, Supabase, APIs, and responsive layouts.</p>
+            </article>
+            <article>
+                <img src="assets/png-images/UIUX Design.png" alt="" />
+                <h2>UI/UX Design</h2>
+                <p>Simple interfaces that are easy to use on every screen.</p>
+            </article>
+            <article>
+                <img src="assets/png-images/Music Producer.png" alt="" />
+                <h2>Music Producer</h2>
+                <p>Music production, mixing, mastering, and creative visuals.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

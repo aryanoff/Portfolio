@@ -1,0 +1,47 @@
+.qualifications-page {
+    max-width: 900px;
+}
+
+.timeline {
+    display: grid;
+    gap: 18px;
+}
+
+.timeline-item {
+    padding: 28px;
+    border-left: 4px solid var(--accent);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.timeline-item span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent-dark);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timeline-item h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.timeline-item p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .timeline-item {
+        padding: 22px;
+    }
+}
