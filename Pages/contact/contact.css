@@ -61,6 +61,26 @@
     line-height: 1.55;
 }
 
+/* ── Contact Form Section ── */
+.contact-form-section {
+    padding: 32px;
+    margin-top: 24px;
+}
+
+.contact-form-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.form-intro {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 24px;
+    line-height: 1.55;
+}
+
 @media (max-width: 700px) {
     .contact-grid {
         grid-template-columns: 1fr;

@@ -353,7 +353,7 @@
     min-width: 0;
 }
 
-.social-card__body h2 {
+.social-card__body h3 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text);
