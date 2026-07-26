@@ -24,8 +24,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+    </noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="global.css" />
@@ -44,7 +47,7 @@
                 <a class="brand" href="index.html">
                     <img src="assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot logo" width="52" height="52" />
                     <img class="signature" src="assets/png-images/Aryan Signature.png" alt="Aryan Singh Rajpoot"
-                        width="auto" height="26" />
+                        width="189" height="26" />
                 </a>
                 <input class="menu-toggle" type="checkbox" id="menu-toggle" />
                 <label class="menu-button" for="menu-toggle" aria-label="Toggle navigation menu">
@@ -71,7 +74,7 @@
         <section class="hero" aria-label="Introduction">
             <div class="hero-image-container">
                 <img src="./assets/bg/vecteezy_3d-abstract-digital-technology-blue-light-particles-wave_33164704.png"
-                    alt="" class="glow-bg" aria-hidden="true" />
+                    alt="" class="glow-bg" aria-hidden="true" width="800" height="467" />
                 <svg class="badge-connectors" viewBox="0 0 500 560" xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true">
                     <line x1="55" y1="95" x2="250" y2="240" />
@@ -80,25 +83,25 @@
                     <line x1="445" y1="430" x2="250" y2="360" />
                 </svg>
                 <img src="./assets/png-images/mySketch.png" alt="Illustrated portrait of Aryan Singh Rajpoot"
-                    class="hero-img" />
+                    class="hero-img" width="400" height="700" />
                 <div class="badges-desktop">
                     <div class="skill-badge badge-top-left">
                         <img class="badge-icon" src="./assets/png-images/fullstack.png"
-                            alt="Full-Stack Development icon" />
+                            alt="Full-Stack Development icon" width="20" height="20" />
                         <span>Full-Stack Dev</span>
                     </div>
                     <div class="skill-badge badge-top-right">
                         <img class="badge-icon" src="./assets/png-images/Music Producer.png"
-                            alt="Music Production icon" />
+                            alt="Music Production icon" width="20" height="20" />
                         <span>Music Producer</span>
                     </div>
                     <div class="skill-badge badge-bottom-left">
                         <img class="badge-icon" src="./assets/png-images/social-media_3893051.png"
-                            alt="Social Media icon" />
+                            alt="Social Media icon" width="20" height="20" />
                         <span>Social Media</span>
                     </div>
                     <div class="skill-badge badge-bottom-right">
-                        <img class="badge-icon" src="./assets/png-images/UIUX Design.png" alt="UI/UX Design icon" />
+                        <img class="badge-icon" src="./assets/png-images/UIUX Design.png" alt="UI/UX Design icon" width="20" height="20" />
                         <span>UI/UX Design</span>
                     </div>
                 </div>
@@ -167,17 +170,17 @@
         <!-- Skill Strip -->
         <section class="skill-strip fade-in-up" aria-label="Main skills">
             <article>
-                <img src="assets/png-images/fullstack.png" alt="Full-Stack Development icon" loading="lazy" />
+                <img src="assets/png-images/fullstack.png" alt="Full-Stack Development icon" loading="lazy" width="42" height="42" />
                 <h3>Full-Stack Dev</h3>
                 <p>React, Vite, Supabase, APIs, and responsive layouts.</p>
             </article>
             <article>
-                <img src="assets/png-images/UIUX Design.png" alt="UI/UX Design icon" loading="lazy" />
+                <img src="assets/png-images/UIUX Design.png" alt="UI/UX Design icon" loading="lazy" width="42" height="42" />
                 <h3>UI/UX Design</h3>
                 <p>Simple interfaces that are easy to use on every screen.</p>
             </article>
             <article>
-                <img src="assets/png-images/Music Producer.png" alt="Music Production icon" loading="lazy" />
+                <img src="assets/png-images/Music Producer.png" alt="Music Production icon" loading="lazy" width="42" height="42" />
                 <h3>Music Producer</h3>
                 <p>Music production, mixing, mastering, and creative visuals.</p>
             </article>
@@ -190,7 +193,7 @@
         <div class="footer-inner">
             <div class="footer-about">
                 <div class="footer-brand">
-                    <img src="assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot" loading="lazy" />
+                    <img src="assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot" loading="lazy" width="44" height="44" />
                     <span>Aryan Singh Rajpoot</span>
                 </div>
                 <p>Full-stack developer, UI/UX designer, music producer, and digital creator based in India.</p>
@@ -208,7 +211,7 @@
             <div class="footer-social">
                 <h3>Connect</h3>
                 <div class="footer-social-links">
-                    <a class="footer-social-link" href="https://in.linkedin.com/in/aryan-rajpoot-2b7ab9279"
+                    <a class="footer-social-link" href="https://www.linkedin.com/in/aryannoff/"
                         target="_blank" rel="noopener" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path

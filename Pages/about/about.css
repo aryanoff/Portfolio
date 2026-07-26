@@ -27,9 +27,8 @@
     height: 260px;
     object-fit: contain;
     border-radius: 50%;
-    background: var(--accent-light);
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
+    border: 10px solid #334155;
+    box-shadow: 4px 6px 16px rgb(0 0 0 / 69%);
 }
 
 .story {
@@ -84,6 +83,7 @@
 }
 
 @media (max-width: 800px) {
+
     .about-intro,
     .about-skills {
         grid-template-columns: 1fr;

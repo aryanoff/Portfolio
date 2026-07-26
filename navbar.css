@@ -118,7 +118,11 @@
 
 @media (max-width: 820px) {
     .menu-button {
-        display: block;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
 
     .nav-links {

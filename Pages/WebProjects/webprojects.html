@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About — Aryan Singh Rajpoot</title>
-    <meta name="description" content="Learn about Aryan Singh Rajpoot — a Computer Science student, full-stack web developer, UI/UX designer, and music producer building creative digital work." />
+    <meta name="description" content="Browse projects by Aryan Singh Rajpoot — web App Projects work." />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="About — Aryan Singh Rajpoot" />
-    <meta property="og:description" content="A developer with a creative side. I build web projects with clean structure, simple design, and useful features." />
-    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Projects — Aryan Singh Rajpoot" />
+    <meta property="og:description" content="A collection of development, Web Application and Website projects." />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="../../assets/png-images/mySketch.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="About — Aryan Singh Rajpoot" />
-    <meta name="twitter:description" content="A developer with a creative side. Web projects, music production, and digital content." />
+    <meta name="twitter:title" content="Projects — Aryan Singh Rajpoot" />
+    <meta name="twitter:description" content="Web App Projects, Python and Ai ChatBot with UI" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        media="print" onload="this.media='all'" />
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
     </noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../../global.css" />
     <link rel="stylesheet" href="../../navbar.css" />
-    <link rel="stylesheet" href="about.css" />
+    <title>Web Projects</title>
+    <link rel="stylesheet" href="./webprojects.css">
 </head>
+
 <body>
-
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
     <!-- ═══ Site Header ═══ -->
     <header class="site-header">
         <nav class="navbar" aria-label="Primary navigation">
             <div class="nav-inner">
                 <a class="brand" href="../../index.html">
-                    <img src="../../assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot logo" width="52" height="52" />
-                    <img class="signature" src="../../assets/png-images/Aryan Signature.png" alt="Aryan Singh Rajpoot" width="189" height="26" />
+                    <img src="../../assets/png-images/mySketch.png" alt="Aryan Singh Rajpoot logo" width="52"
+                        height="52" />
+                    <img class="signature" src="../../assets/png-images/Aryan Signature.png" alt="Aryan Singh Rajpoot"
+                        width="189" height="26" />
                 </a>
                 <input class="menu-toggle" type="checkbox" id="menu-toggle" />
                 <label class="menu-button" for="menu-toggle" aria-label="Toggle navigation menu">
@@ -51,8 +56,8 @@
                 </label>
                 <ul class="nav-links">
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a class="active" href="about.html" aria-current="page">About</a></li>
-                    <li><a href="../project/projects.html">Projects</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a class="active" href="../project/projects.html" aria-current="page">Projects</a></li>
                     <li><a href="../qualificatioion/qualifications.html">Qualifications</a></li>
                     <li><a href="../socialmedia/social-media.html">Social Media</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
@@ -61,54 +66,79 @@
         </nav>
     </header>
 
-    <!-- ═══ Main Content ═══ -->
-    <main id="main-content" class="page-shell about-page">
-
-        <section class="about-intro fade-in-up" aria-label="Introduction">
-            <div>
-                <span class="eyebrow">About me</span>
-                <h1>A developer with a creative side.</h1>
-                <p>
-                    I build web projects with clean structure, simple design, and useful
-                    features. I also create music and digital content under Mr Rajpoot Studio.
-                </p>
-            </div>
-            <img src="https://res.cloudinary.com/ams1rfsh/image/upload/v1784481998/aryan_r3naqz.jpg" alt="Illustrated portrait of Aryan Singh Rajpoot" loading="lazy" width="260" height="260" />
-        </section>
-
-        <section class="story card fade-in-up" aria-label="My Story">
-            <h2>My Story</h2>
-            <p>
-                My journey started with curiosity about how websites work. Since then, I
-                have practiced HTML, CSS, JavaScript, React, Vite, Supabase, and UI design
-                by making real projects.
-            </p>
-            <p>
-                I like building pages that are easy to read, easy to update, and comfortable
-                for users. Outside of code, I work on music production, visuals, and social
-                media content.
-            </p>
-        </section>
-
-        <section class="about-skills fade-in-up" aria-label="Skills">
-            <article class="card">
-                <img src="../../assets/png-images/fullstack.png" alt="Full-Stack Development icon" loading="lazy" width="42" height="42" />
-                <h2>Development</h2>
-                <p>Frontend pages, backend tools, APIs, and responsive layouts.</p>
-            </article>
-            <article class="card">
-                <img src="../../assets/png-images/UIUX Design.png" alt="UI/UX Design icon" loading="lazy" width="42" height="42" />
-                <h2>Design</h2>
-                <p>Clean screens, readable sections, and mobile-friendly structure.</p>
-            </article>
-            <article class="card">
-                <img src="../../assets/png-images/Music Producer.png" alt="Music Production icon" loading="lazy" width="42" height="42" />
-                <h2>Music</h2>
-                <p>Music production, vocal polish, mixing, mastering, and branding.</p>
-            </article>
-        </section>
-
+    <main>
+        <h1>Featured Projects</h1>
+        <p>Take a look at what I've built and what I'm working on next.</p>
     </main>
+
+    <section class="projects">
+
+        <h2>Python Projects</h2>
+
+        <div class="pythonsection">
+            <div class="pythonprojects">
+                <a href="https://calculator-with-ui-production.up.railway.app/" target="_blank"><img
+                        src="https://res.cloudinary.com/ams1rfsh/image/upload/v1784988665/simplecalculator_p98nnj.png" alt="Simple Calculator">
+                </a>
+                <div class="cardheader">
+                    <h2>Simple Calculator</h2>
+
+                    <!-- Like Button -->
+                    <button class="like-btn" data-project="simple-calculator">
+                        <span class="heart-icon">&#x2661;</span> Like
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <p>A clean, intuitive web calculator designed to instantly perform fundamental arithmetic operations,
+                    including addition, subtraction, multiplication, and division.</p>
+            </div>
+
+            <div class="pythonprojects">
+                <a href="https://steadfast-spirit-production-5306.up.railway.app/" target="_blank"><img
+                        src="https://res.cloudinary.com/ams1rfsh/image/upload/v1784988837/zaraai_nrkqss.png" alt="Zaara AI ChatBot">
+                </a>
+                <div class="cardheader">
+                    <h2>Zaara AI ChatBot</h2>
+
+                    <!-- Like Button -->
+                    <button class="like-btn" data-project="zara-chatbot">
+                        <span class="heart-icon">&#x2661;</span> Like
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <p>Zaara AI is an intelligent chatbot built with Python and Llama AI. It features a sleek, modern
+                    interface designed for seamless user interaction, offering smart prompt suggestions, workspace
+                    management, and a highly professional user experience.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects">
+
+        <h2>Web Projects</h2>
+
+        <div class="websection">
+            <div class="webprojects">
+                <a href="https://bookyourtrips.netlify.app/" target="_blank"><img
+                        src="https://res.cloudinary.com/ams1rfsh/image/upload/v1785001333/traveling_ula2jh.png" alt="Book Your Trip">
+                </a>
+                <div class="cardheader">
+                    <h2>Book Your Trip</h2>
+
+                    <!-- Like Button -->
+                    <button class="like-btn" data-project="book-your-trip">
+                        <span class="heart-icon">&#x2661;</span> Like
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+                <p>A beautiful travel booking website template for planning journeys, checking destinations, and managing booking details.</p>
+            </div>
+        </div>
+
+    </section>
 
     <!-- ═══ Site Footer ═══ -->
     <footer class="site-footer">
@@ -124,9 +154,10 @@
                 <h3>Pages</h3>
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="../about/about.html">About</a></li>
                     <li><a href="../project/projects.html">Projects</a></li>
                     <li><a href="../qualificatioion/qualifications.html">Qualifications</a></li>
+                    <li><a href="../socialmedia/social-media.html">Social Media</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -154,6 +185,7 @@
         </div>
     </footer>
 
-    <script src="../../main.js" defer></script>
+    <script src="./webprojects.js"></script>
 </body>
+
 </html>
