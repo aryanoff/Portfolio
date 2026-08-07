@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const skillCategories = [
+        { id: "all", label: "All Skills" },
+        { id: "frontend", label: "Frontend" },
+        { id: "backend", label: "Backend" },
+        { id: "design", label: "UI/UX Design" },
+        { id: "tools-ecosystem", label: "Tools & Ecosystem" },
+        { id: "creative", label: "Creative Tools" },
+        { id: "exploring", label: "Exploring" },
+        { id: "ai-tech", label: "AI & Technology" }
+    ];
+
+    const skillsData = [
         {
             name: "HTML5",
             category: "frontend",
