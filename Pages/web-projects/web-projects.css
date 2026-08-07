@@ -1,4 +1,3 @@
-/* Custom variables for like button */
 :root {
     --accent: #7C3AED;
     --accent-pink: #EC4899;
@@ -35,7 +34,7 @@ main {
     gap: 40px;
 }
 
-.pythonprojects, .webprojects {
+.projectcard {
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -47,34 +46,33 @@ main {
     overflow: hidden;
 }
 
-.pythonprojects:hover, .webprojects:hover {
+.projectcard:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
-.pythonprojects img, .webprojects img {
+.projectcard img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-bottom: 1px solid var(--border);
 }
 
-.pythonprojects h2, .webprojects h2 {
+.projectcard h2 {
     font-size: 22px;
     font-weight: 700;
     color: var(--text);
     margin: 0;
 }
 
-.pythonprojects p, .webprojects p {
+.projectcard p {
     margin: 0 20px 20px 20px;
     font-size: 15px;
     color: var(--body);
     line-height: 1.6;
 }
 
-/* Card Header Section */
 .cardheader {
     display: flex;
     justify-content: space-between;
@@ -82,7 +80,6 @@ main {
     padding: 20px;
 }
 
-/* Like Button CSS */
 .like-btn {
     background: linear-gradient(135deg, var(--accent-pink), var(--accent));
     -webkit-background-clip: text;
