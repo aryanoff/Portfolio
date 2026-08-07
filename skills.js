@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const skillCategories = [
-        // Frontend
         {
             name: "HTML5",
             category: "frontend",
@@ -308,9 +307,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    /*
-     * Generates initials from a skill name as image fallback.
-     */
     function createInitials(skillName) {
         return skillName
             .split(" ")

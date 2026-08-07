@@ -1,4 +1,4 @@
-.contact-page {
+﻿.contact-page {
     max-width: 1040px;
 }
 
@@ -61,7 +61,6 @@
     line-height: 1.55;
 }
 
-/* ── Contact Form Section ── */
 .contact-form-section {
     padding: 32px;
     margin-top: 24px;

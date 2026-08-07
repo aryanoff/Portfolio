@@ -1,4 +1,4 @@
-.home-page {
+﻿.home-page {
     width: min(1120px, 90%);
     margin: 0 auto;
     padding: clamp(40px, 8vw, 100px) 0;
@@ -73,7 +73,6 @@
     box-shadow: var(--shadow);
 }
 
-/* Image column */
 .hero-image-container {
     position: relative;
     width: 100%;
@@ -129,7 +128,6 @@
     filter: drop-shadow(0 12px 32px rgba(124, 58, 237, 0.28));
 }
 
-/* Floating skill badges */
 .badges-desktop {
     position: absolute;
     inset: 0;
@@ -189,8 +187,6 @@
     padding: 110px 0;
 }
 
-/* Section heading */
-
 .skills-heading {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
@@ -241,8 +237,6 @@
     line-height: 1.8;
 }
 
-/* Main cards */
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -266,8 +260,6 @@
         box-shadow 0.3s ease;
 }
 
-/* Colored top line */
-
 .skill-card::before {
     content: "";
     position: absolute;
@@ -279,8 +271,6 @@
     background: var(--card-accent);
     transition: width 0.3s ease;
 }
-
-/* Soft background glow */
 
 .skill-card::after {
     content: "";
@@ -384,8 +374,6 @@
     line-height: 1.72;
 }
 
-/* Skill tags */
-
 .skill-tags {
     position: relative;
     z-index: 1;
@@ -406,8 +394,6 @@
     border-radius: 8px;
     background: #f8fafc;
 }
-
-/* Toolkit row */
 
 .skills-toolkit {
     display: flex;
@@ -481,8 +467,6 @@
     background: rgba(124, 58, 237, 0.2);
 }
 
-/* Tablet */
-
 @media (max-width: 900px) {
     .portfolio-skills {
         padding: 85px 0;
@@ -514,8 +498,6 @@
         justify-content: flex-start;
     }
 }
-
-/* Mobile */
 
 @media (max-width: 600px) {
     .portfolio-skills {
@@ -554,8 +536,6 @@
     }
 }
 
-/* Reduced motion accessibility */
-
 @media (prefers-reduced-motion: reduce) {
     .skill-card,
     .skill-card::before,
@@ -591,8 +571,6 @@
     width: min(1120px, 100%);
     margin: 0 auto;
 }
-
-/* Header */
 
 .tech-skills-header {
     max-width: 770px;
@@ -639,8 +617,6 @@
     font-size: 1rem;
     line-height: 1.75;
 }
-
-/* Filter buttons */
 
 .skill-filter-wrapper {
     display: flex;
@@ -695,8 +671,6 @@
     outline: 3px solid rgba(124, 58, 237, 0.25);
     outline-offset: 3px;
 }
-
-/* Cards grid */
 
 .skills-card-grid {
     display: grid;
@@ -766,8 +740,6 @@
     opacity: 1;
 }
 
-/* Card top */
-
 .skill-card-top {
     position: relative;
     z-index: 1;
@@ -826,8 +798,6 @@
     background: #faf5ff;
 }
 
-/* Card content */
-
 .skill-card-body {
     position: relative;
     z-index: 1;
@@ -858,8 +828,6 @@
     -webkit-line-clamp: 2;
 }
 
-/* Empty category message */
-
 .skills-empty-message {
     grid-column: 1 / -1;
     padding: 50px 20px;
@@ -869,8 +837,6 @@
     border-radius: 20px;
     background: #f8fafc;
 }
-
-/* Bottom CTA */
 
 .skills-cta {
     position: relative;
@@ -1011,8 +977,6 @@
     outline-offset: 4px;
 }
 
-/* Animation */
-
 @keyframes skillCardEntry {
     from {
         opacity: 0;
@@ -1024,8 +988,6 @@
         transform: translateY(0);
     }
 }
-
-/* Responsive */
 
 @media (max-width: 1000px) {
     .skills-card-grid {
@@ -1160,7 +1122,6 @@
     line-height: 1.55;
 }
 
-/* ── Bento Box Resume ── */
 .bento-resume {
     margin-top: clamp(40px, 8vw, 80px);
     margin-bottom: 20px;
@@ -1293,8 +1254,6 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
-
-/* ── Responsive ── */
 
 @media (max-width: 968px) {
     .hero {

@@ -1,8 +1,5 @@
-/* ═══════════════════════════════════════════
-   SOCIAL MEDIA PAGE — Premium Redesign
-   ═══════════════════════════════════════════ */
+﻿
 
-/* ── Hero Section ── */
 .hero {
     position: relative;
     width: 100%;
@@ -27,7 +24,6 @@
     margin: 0 auto;
 }
 
-/* ── Title ── */
 .hero-content {
     max-width: 720px;
 }
@@ -64,7 +60,6 @@
     background: linear-gradient(90deg, #EC4899, #6366F1);
 }
 
-/* ── Subtitle ── */
 .hero-subtitle {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +78,6 @@
     opacity: 0.7;
 }
 
-/* ── Skills Row ── */
 .hero-skills {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +98,6 @@
     opacity: 0.6;
 }
 
-/* ── Feature Cards Row ── */
 .feature-row {
     position: relative;
     display: flex;
@@ -167,7 +160,6 @@
     text-transform: uppercase;
 }
 
-/* ── Right: Avatar Visual ── */
 .hero-visual {
     position: relative;
     display: flex;
@@ -221,7 +213,6 @@
     filter: drop-shadow(0 12px 28px rgba(15, 23, 42, 0.1));
 }
 
-/* ── Decorative Dots ── */
 .hero-decor {
     position: absolute;
     inset: 0;
@@ -254,7 +245,6 @@
     grid-template-columns: repeat(3, 4px);
 }
 
-/* ── Decorative Sparkles ── */
 .sparkle {
     position: absolute;
     width: 12px;
@@ -281,11 +271,6 @@
     right: 4%;
 }
 
-
-/* ═══════════════════════════════════════════
-   SOCIAL MEDIA SECTION
-   ═══════════════════════════════════════════ */
-
 .social-page {
     max-width: 1000px;
 }
@@ -311,7 +296,6 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Icon circles per brand */
 .social-card__icon {
     flex-shrink: 0;
     width: 48px;
@@ -348,7 +332,6 @@
     background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4);
 }
 
-/* Card body */
 .social-card__body {
     flex: 1;
     min-width: 0;
@@ -367,7 +350,6 @@
     line-height: 1.45;
 }
 
-/* Arrow indicator */
 .social-card__arrow {
     flex-shrink: 0;
     font-size: 18px;
@@ -382,16 +364,10 @@
     transform: translateX(0);
 }
 
-/* Hover accent borders per brand */
 .social-card:hover:nth-child(1) { border-left-color: #0A66C2; }
 .social-card:hover:nth-child(2) { border-left-color: #1F2328; }
 .social-card:hover:nth-child(3) { border-left-color: #FF0000; }
 .social-card:hover:nth-child(4) { border-left-color: #DD2A7B; }
-
-
-/* ═══════════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════════ */
 
 @media (max-width: 1024px) {
     .hero {

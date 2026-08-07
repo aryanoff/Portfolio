@@ -1,4 +1,4 @@
-*,
+﻿*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -7,35 +7,35 @@
 }
 
 :root {
-    /* ── Palette ── */
+    
     --bg: #F6F1EC;
     --surface: #ffffff;
     --text: #0F172A;
     --body: #334155;
     --muted: #64748B;
 
-    /* Accent */
+    
     --accent: #7C3AED;
     --accent-dark: #5B21B6;
     --accent-light: #EDE9FE;
     --accent-pink: #EC4899;
     --accent-blue: #6366F1;
 
-    /* Legacy aliases used across pages */
+    
     --primary: #7C3AED;
     --primary-dark: #5B21B6;
     --primary-light: #EDE9FE;
 
-    /* Navbar */
+    
     --nav-bg: #A7C7D8;
 
-    /* Borders & Shadows */
+    
     --border: #E2E8F0;
     --shadow-sm: 0 1px 2px rgba(15,23,42,0.04);
     --shadow: 0 1px 3px rgba(15,23,42,0.04), 0 8px 24px rgba(15,23,42,0.06);
     --shadow-lg: 0 4px 6px rgba(15,23,42,0.03), 0 20px 50px rgba(15,23,42,0.08);
 
-    /* Layout */
+    
     --nav-height: 70px;
     --radius: 12px;
     --font: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
@@ -45,7 +45,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Anchor offset for sticky navbar */
 [id] {
     scroll-margin-top: calc(var(--nav-height) + 20px);
 }
@@ -69,7 +68,6 @@ a {
     color: inherit;
 }
 
-/* ── Focus-Visible — Global Accessibility ── */
 :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
@@ -86,12 +84,10 @@ select:focus-visible,
     outline-offset: 3px;
 }
 
-/* Remove default outline for mouse clicks */
 :focus:not(:focus-visible) {
     outline: none;
 }
 
-/* ── Skip to Content (Screen Reader) ── */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -111,14 +107,12 @@ select:focus-visible,
     top: 0;
 }
 
-/* ── Layout Shell ── */
 .page-shell {
     width: min(1120px, 90%);
     margin: 0 auto;
     padding: clamp(40px, 8vw, 100px) 0;
 }
 
-/* ── Page Header ── */
 .page-header {
     margin-bottom: 40px;
 }
@@ -171,7 +165,6 @@ select:focus-visible,
     background-clip: text;
 }
 
-/* ── Buttons ── */
 .button {
     display: inline-block;
     padding: 12px 22px;
@@ -210,7 +203,6 @@ select:focus-visible,
     box-shadow: var(--shadow);
 }
 
-/* ── Cards ── */
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -219,7 +211,6 @@ select:focus-visible,
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-/* ── Animations ── */
 .fade-in-up {
     opacity: 0;
     transform: translateY(24px);
@@ -231,7 +222,6 @@ select:focus-visible,
     transform: translateY(0);
 }
 
-/* ── Site Footer ── */
 .site-footer {
     background: #0F172A;
     color: rgba(255, 255, 255, 0.7);
@@ -302,7 +292,6 @@ select:focus-visible,
     color: #ffffff;
 }
 
-/* Main developer-style window */
 .social-window {
     position: relative;
     padding: 14px;
@@ -325,7 +314,6 @@ select:focus-visible,
     -webkit-backdrop-filter: blur(16px);
 }
 
-/* Subtle purple ambient glow */
 .social-window::before {
     content: "";
     position: absolute;
@@ -347,7 +335,6 @@ select:focus-visible,
     opacity: 1;
 }
 
-/* Top window bar */
 .social-window-header {
     display: flex;
     align-items: center;
@@ -391,7 +378,6 @@ select:focus-visible,
     letter-spacing: 0.04em;
 }
 
-/* Social icons layout */
 .footer-social-links {
     display: flex;
     flex-wrap: wrap;
@@ -400,7 +386,6 @@ select:focus-visible,
     align-items: center;
 }
 
-/* Individual social icon */
 .footer-social-link {
     --brand-color: #8b5cf6;
 
@@ -468,7 +453,6 @@ select:focus-visible,
     outline-offset: 3px;
 }
 
-/* Brand colors */
 .footer-social-link.linkedin {
     --brand-color: #0a66c2;
 }
@@ -485,7 +469,6 @@ select:focus-visible,
     --brand-color: #C13584;
 }
 
-/* Tooltip */
 .footer-social-link::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -520,7 +503,6 @@ select:focus-visible,
     transform: translate(-50%, 0);
 }
 
-/* Mobile */
 @media (max-width: 480px) {
     .social-window {
         padding: 12px;
@@ -543,7 +525,6 @@ select:focus-visible,
     }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     .footer-social-link,
     .footer-social-link svg,
@@ -580,7 +561,6 @@ select:focus-visible,
     color: #ffffff;
 }
 
-/* ── Contact Form ── */
 .contact-form-section {
     margin-top: 32px;
 }
@@ -676,7 +656,6 @@ select:focus-visible,
     border: 1px solid rgba(124, 58, 237, 0.2);
 }
 
-/* ── Responsive ── */
 @media (max-width: 700px) {
     .page-shell {
         width: min(92%, 620px);
