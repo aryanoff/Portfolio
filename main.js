@@ -1,15 +1,9 @@
-/* ═══════════════════════════════════════════
-   main.js — Portfolio Enhancements
-   ═══════════════════════════════════════════ */
-
 (function () {
   "use strict";
 
-  /* ── 1. Dynamic Copyright Year ── */
   const yearEl = document.getElementById("copyright-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ── 2. Scroll-triggered fade-in-up ── */
   const faders = document.querySelectorAll(".fade-in-up");
 
   if (faders.length && "IntersectionObserver" in window) {
@@ -26,11 +20,9 @@
     );
     faders.forEach((el) => observer.observe(el));
   } else {
-    // Fallback: just show everything
     faders.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ── 3. Mobile menu auto-close ── */
   const toggle = document.getElementById("menu-toggle");
   const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -42,7 +34,6 @@
     });
   }
 
-  /* ── 4. Contact form handler (Formspree-ready) ── */
   const form = document.getElementById("contact-form");
   const formFeedback = document.getElementById("form-feedback");
 
@@ -50,7 +41,6 @@
     form.addEventListener("submit", function (e) {
       const action = form.getAttribute("action");
 
-      // If no real Formspree endpoint is configured, prevent submission and show message
       if (!action || action === "#") {
         e.preventDefault();
         if (formFeedback) {
@@ -62,8 +52,6 @@
         return;
       }
 
-      // If Formspree is configured, let it submit naturally (no JS fetch needed)
-      // Formspree handles the redirect. For AJAX:
       e.preventDefault();
       const data = new FormData(form);
 

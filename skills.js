@@ -1,37 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /*
-     * =============================================
-     * FILTER CATEGORIES
-     * =============================================
-     *
-     * Naya filter add karne ke liye:
-     * { id: "new-category", label: "New Category" }
-     */
 
     const skillCategories = [
-        { id: "all", label: "All Skills" },
-        { id: "frontend", label: "Frontend" },
-        { id: "backend", label: "Backend" },
-        { id: "design", label: "UI/UX Design" },
-        { id: "tools-ecosystem", label: "Tools & Ecosystem" },
-        { id: "creative", label: "Creative Tools" },
-        { id: "exploring", label: "Exploring" },
-        { id: "ai-tech", label: "AI & Technology" }
-    ];
-
-    /*
-     * =============================================
-     * SKILLS DATA
-     * =============================================
-     *
-     * Naya card add karne ke liye kisi object ko
-     * copy karke details aur PNG path change karein.
-     *
-     * Card remove karne ke liye uska complete
-     * object delete kar dein.
-     */
-
-    const skillsData = [
         // Frontend
         {
             name: "HTML5",
@@ -69,8 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             color: "#61dafb",
             glow: "rgba(97, 218, 251, 0.15)"
         },
-        
-        // Backend
+
         {
             name: "Supabase",
             category: "backend",
@@ -80,9 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             color: "#3ecf8e",
             glow: "rgba(62, 207, 142, 0.14)"
         },
-        
 
-        // Tools & Ecosystem
         {
         name: "GitHub",
         category: "tools-ecosystem",
@@ -165,8 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
         glow: "rgba(52, 135, 250, 0.13)",
         },
 
-
-        // Design
         {
             name: "UI/UX Design",
             category: "design",
@@ -177,8 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
             glow: "rgba(139, 92, 246, 0.14)"
         },
 
-
-        // Creative
         {
             name: "FL Studio",
             category: "creative",
@@ -216,8 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
             glow: "rgba(0, 0, 0, 0.14)"
         },
 
-
-        // Exploring
         {
             name: "TuneCore",
             category: "exploring",
@@ -246,7 +206,6 @@ document.addEventListener("DOMContentLoaded", () => {
             glow: "rgba(128, 60, 176, 0.14)"
         },
 
-        // AI & Technology
         {
         name: "ChatGPT",
         category: "ai-tech",
@@ -350,10 +309,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /*
-     * Skill name se fallback letters banata hai.
-     * PNG missing hone par ye visible honge.
+     * Generates initials from a skill name as image fallback.
      */
-
     function createInitials(skillName) {
         return skillName
             .split(" ")
@@ -362,10 +319,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .slice(0, 2)
             .toUpperCase();
     }
-
-    /*
-     * Filter buttons generate karta hai.
-     */
 
     function renderFilters() {
         filtersContainer.replaceChildren();
@@ -386,10 +339,6 @@ document.addEventListener("DOMContentLoaded", () => {
             filtersContainer.appendChild(button);
         });
     }
-
-    /*
-     * Single skill card create karta hai.
-     */
 
     function createSkillCard(skill, index) {
         const card = document.createElement("article");
@@ -416,11 +365,6 @@ document.addEventListener("DOMContentLoaded", () => {
         fallback.className = "skill-icon-fallback";
         fallback.textContent = createInitials(skill.name);
         fallback.hidden = true;
-
-        /*
-         * Agar PNG path galat hai ya image missing hai,
-         * tab automatically initials show honge.
-         */
 
         image.addEventListener("error", () => {
             image.hidden = true;
@@ -449,10 +393,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return card;
     }
-
-    /*
-     * Selected category ke cards render karta hai.
-     */
 
     function renderSkills(category = "all") {
         activeCategory = category;
@@ -486,10 +426,6 @@ document.addEventListener("DOMContentLoaded", () => {
         skillsGrid.appendChild(fragment);
     }
 
-    /*
-     * Filter button click handling.
-     */
-
     filtersContainer.addEventListener("click", event => {
         const selectedButton = event.target.closest(
             ".skill-filter-button"
@@ -516,10 +452,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         renderSkills(activeCategory);
     });
-
-    /*
-     * Initial rendering.
-     */
 
     renderFilters();
     renderSkills(activeCategory);

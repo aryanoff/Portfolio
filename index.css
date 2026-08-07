@@ -173,9 +173,7 @@
     50%       { transform: translateY(-10px); }
 }
 
-/* ================================
-   PORTFOLIO SKILLS SECTION
-================================ */
+/* Portfolio Skills Section */
 
 .portfolio-skills {
     --skills-navy: #0f172a;
@@ -566,9 +564,7 @@
     }
 }
 
-/* =========================================
-   DYNAMIC SKILLS & TECHNOLOGIES SECTION
-========================================= */
+/* Tech Skills & Technologies Section */
 
 .tech-skills {
     --skill-purple: #7c3aed;
