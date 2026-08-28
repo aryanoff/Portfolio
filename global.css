@@ -1,4 +1,4 @@
-﻿*,
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -233,8 +233,8 @@ select:focus-visible,
     width: min(1120px, 100%);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(24px, 4vw, 40px);
 }
 
 .footer-brand {
@@ -393,8 +393,8 @@ select:focus-visible,
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 
     color: #94a3b8;
     text-decoration: none;
@@ -514,8 +514,8 @@ select:focus-visible,
     }
 
     .footer-social-link {
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         border-radius: 11px;
     }
 
@@ -567,7 +567,7 @@ select:focus-visible,
 
 .contact-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
 }
 
@@ -663,7 +663,6 @@ select:focus-visible,
     }
 
     .footer-inner {
-        grid-template-columns: 1fr;
         gap: 28px;
     }
 
@@ -672,7 +671,4 @@ select:focus-visible,
         text-align: center;
     }
 
-    .contact-form {
-        grid-template-columns: 1fr;
-    }
 }

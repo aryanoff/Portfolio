@@ -1,4 +1,4 @@
-﻿.about-intro {
+.about-intro {
     display: grid;
     grid-template-columns: 1.2fr 260px;
     align-items: center;
@@ -56,8 +56,8 @@
 
 .about-skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(16px, 3vw, 24px);
 }
 
 .about-skills article {
@@ -84,8 +84,7 @@
 
 @media (max-width: 800px) {
 
-    .about-intro,
-    .about-skills {
+    .about-intro {
         grid-template-columns: 1fr;
     }
 

@@ -1,5 +1,5 @@
-﻿:root {
-    --accent: #7C3AED;
+:root {
+    --accent: #a855f7;
     --accent-pink: #EC4899;
 }
 
@@ -30,8 +30,8 @@ main {
     margin: 30px auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(24px, 4vw, 40px);
 }
 
 .projectcard {
@@ -77,40 +77,100 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    gap: 15px;
+    margin: 20px 20px 0 20px;
+}
+
+.cardheader h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
 }
 
 .like-btn {
-    background: linear-gradient(135deg, var(--accent-pink), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    border: 2px solid var(--accent);
-    padding: 8px 16px;
-    font-size: 14px;
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 6px 14px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
+}
+
+.like-btn:hover {
+    background: rgba(168, 85, 247, 0.08);
 }
 
 .like-btn.liked {
     background: linear-gradient(135deg, var(--accent-pink), var(--accent));
-    -webkit-text-fill-color: white;
     color: white;
-    box-shadow: var(--shadow-sm);
+    border: 1.5px solid transparent;
+    box-shadow: 0 4px 10px rgba(168, 85, 247, 0.25);
 }
 
 .heart-icon {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .pythonsection, .websection {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+.project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin: 0 20px 15px 20px;
+}
+
+.project-desc.expanded {
+    -webkit-line-clamp: unset; 
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--accent); 
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    margin-left: 20px; 
+    text-align: left;
+}
+
+.read-more-btn:hover {
+    color: #9333ea;
+    text-decoration: underline;
+}
+
+.card-actions {
+    margin: auto 20px 20px 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+}
+
+.view-project-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.view-project-btn:hover {
+    background-color: rgba(168, 85, 247, 0.08);
+    transform: translateY(-2px);
 }

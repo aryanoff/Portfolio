@@ -27,9 +27,18 @@
   const navLinks = document.querySelectorAll(".nav-links a");
 
   if (toggle) {
+    toggle.addEventListener("change", (e) => {
+      if (e.target.checked) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    });
+
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         toggle.checked = false;
+        document.body.style.overflow = "";
       });
     });
   }
@@ -66,22 +75,22 @@
         body: data,
         headers: { Accept: "application/json" },
       })
-        .then((res) => {
+        .then(async (res) => {
+          const json = await res.json().catch(() => null);
           if (res.ok) {
             form.reset();
             if (formFeedback) {
               formFeedback.textContent =
-                "Message sent successfully! I'll get back to you soon.";
+                json?.message || "Message sent successfully! I'll get back to you soon.";
               formFeedback.className = "form-feedback form-feedback--success";
             }
           } else {
-            throw new Error("Submission failed");
+            throw new Error(json?.message || "Submission failed");
           }
         })
-        .catch(() => {
+        .catch((err) => {
           if (formFeedback) {
-            formFeedback.textContent =
-              "Something went wrong. Please try emailing directly.";
+            formFeedback.textContent = err.message !== "Submission failed" ? err.message : "Something went wrong. Please try emailing directly.";
             formFeedback.className = "form-feedback form-feedback--error";
           }
         });

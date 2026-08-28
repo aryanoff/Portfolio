@@ -1,4 +1,4 @@
-﻿
+
 
 .hero {
     position: relative;
@@ -277,8 +277,8 @@
 
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 3vw, 20px);
 }
 
 .social-card {
@@ -485,9 +485,7 @@
         width: 200px;
     }
 
-    .social-grid {
-        grid-template-columns: 1fr;
-    }
+
 }
 
 @media (max-width: 480px) {

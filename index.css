@@ -1,4 +1,4 @@
-﻿.home-page {
+.home-page {
     width: min(1120px, 90%);
     margin: 0 auto;
     padding: clamp(40px, 8vw, 100px) 0;
@@ -239,8 +239,8 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(16px, 3vw, 22px);
 }
 
 .skill-card {
@@ -477,13 +477,6 @@
         gap: 20px;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .skill-creative {
-        grid-column: 1 / -1;
-    }
 
     .skill-card {
         min-height: 340px;
@@ -517,13 +510,6 @@
         font-size: 0.92rem;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-creative {
-        grid-column: auto;
-    }
 
     .skill-card {
         min-height: 325px;
@@ -674,9 +660,9 @@
 
 .skills-card-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     align-items: stretch;
-    gap: 20px;
+    gap: clamp(14px, 2vw, 20px);
     min-height: 180px;
 }
 
@@ -989,20 +975,12 @@
     }
 }
 
-@media (max-width: 1000px) {
-    .skills-card-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
 
 @media (max-width: 780px) {
     .tech-skills {
         padding: 85px 18px;
     }
 
-    .skills-card-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 
     .skills-cta-actions {
         align-items: flex-start;
@@ -1050,9 +1028,6 @@
         padding-inline: 18px;
     }
 
-    .skills-card-grid {
-        grid-template-columns: 1fr;
-    }
 
     .skill-tech-card {
         min-height: 165px;
@@ -1078,8 +1053,8 @@
 
 .skill-strip {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(12px, 2vw, 18px);
     margin-top: 42px;
 }
 
@@ -1291,9 +1266,6 @@
         padding: clamp(30px, 6vw, 60px) 0;
     }
 
-    .skill-strip {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 768px) {

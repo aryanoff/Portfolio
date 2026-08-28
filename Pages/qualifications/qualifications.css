@@ -121,6 +121,10 @@
     padding: 100px 0;
     overflow: hidden;
     background: var(--certificate-background);
+    
+    /* Force full screen width */
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .certificate-showcase *,

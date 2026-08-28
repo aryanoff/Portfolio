@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-const certificatesData = [
+    const certificatesData = [
         {
             title: "Introduction to Digital Transformation with Google Cloud",
             issuer: "Simplilearn SkillUp — Powered by Google Cloud",
@@ -19,45 +19,45 @@ const certificatesData = [
             link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1785865211/WhatsApp_Image_2026-07-31_at_10.01.50_PM_s9lwrx.jpg"
         },
         {
-        title: "AI-Powered Performance Ads Certification",
-        issuer: "Google",
-        category: "Digital Marketing & AI",
-        description: "Successfully completed the certification, demonstrating proficiency in leveraging AI-driven strategies to optimize advertising campaigns.",
-        image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.02_PM_ngyifc.jpg",
-        link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.02_PM_ngyifc.jpg"
-    },
-    {
-        title: "CSS with AI",
-        issuer: "Unstop",
-        category: "Web Development & AI",
-        description: "Completed a course exploring the integration of artificial intelligence with CSS to enhance web design and intelligent styling workflows.",
-        image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.03_PM_1_td3e3j.jpg",
-        link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.03_PM_1_td3e3j.jpg"
-    },
-    {
-        title: "Fundamentals of DevOps On AWS",
-        issuer: "Simplilearn",
-        category: "Cloud Computing & DevOps",
-        description: "Successfully completed an online course covering the core fundamentals of DevOps practices and deployments on the AWS cloud platform.",
-        image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.03_PM_j9djqv.jpg",
-        link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.03_PM_j9djqv.jpg"
-    },
-    {
-        title: "Create Engaging Video with Google Vids",
-        issuer: "Simplilearn",
-        category: "Content Creation & AI",
-        description: "Completed a Google Cloud-powered course focused on utilizing Google Vids and AI tools to create engaging and professional video content.",
-        image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_1_rgkfji.jpg",
-        link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_1_rgkfji.jpg"
-    },
-    {
-        title: "Node JS",
-        issuer: "Unstop",
-        category: "Web Development",
-        description: "Successfully completed a course on Node JS, focusing on backend JavaScript development, server setup, and modern server-side programming.",
-        image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg",
-        link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg"
-    }
+            title: "AI-Powered Performance Ads Certification",
+            issuer: "Google",
+            category: "Digital Marketing & AI",
+            description: "Successfully completed the certification, demonstrating proficiency in leveraging AI-driven strategies to optimize advertising campaigns.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.02_PM_ngyifc.jpg",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.02_PM_ngyifc.jpg"
+        },
+        {
+            title: "CSS with AI",
+            issuer: "Unstop",
+            category: "Web Development & AI",
+            description: "Completed a course exploring the integration of artificial intelligence with CSS to enhance web design and intelligent styling workflows.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.03_PM_1_td3e3j.jpg",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.03_PM_1_td3e3j.jpg"
+        },
+        {
+            title: "Fundamentals of DevOps On AWS",
+            issuer: "Simplilearn",
+            category: "Cloud Computing & DevOps",
+            description: "Successfully completed an online course covering the core fundamentals of DevOps practices and deployments on the AWS cloud platform.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.03_PM_j9djqv.jpg",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100695/WhatsApp_Image_2026-08-07_at_4.33.03_PM_j9djqv.jpg"
+        },
+        {
+            title: "Create Engaging Video with Google Vids",
+            issuer: "Simplilearn",
+            category: "Content Creation & AI",
+            description: "Completed a Google Cloud-powered course focused on utilizing Google Vids and AI tools to create engaging and professional video content.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_1_rgkfji.jpg",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_1_rgkfji.jpg"
+        },
+        {
+            title: "Node JS",
+            issuer: "Unstop",
+            category: "Web Development",
+            description: "Successfully completed a course on Node JS, focusing on backend JavaScript development, server setup, and modern server-side programming.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg"
+        }
     ];
 
     const certificateTrack =

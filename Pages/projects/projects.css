@@ -1,7 +1,7 @@
-﻿.project-grid {
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(16px, 3vw, 22px);
 }
 
 .project-card {
@@ -58,8 +58,4 @@
     letter-spacing: 0.2px;
 }
 
-@media (max-width: 760px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-}
+

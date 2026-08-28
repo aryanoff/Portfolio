@@ -1,4 +1,4 @@
-﻿.navbar {
+.navbar {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -130,7 +130,10 @@
         top: var(--nav-height);
         left: 0;
         right: 0;
-        padding: 12px 5% 20px;
+        height: calc(100vh - var(--nav-height));
+        overflow-y: auto;
+        align-content: start;
+        padding: 24px 5% 40px;
         background: rgba(167, 199, 216, 0.96);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
@@ -144,8 +147,9 @@
     }
 
     .nav-links a {
-        padding: 12px 14px;
-        border-radius: 8px;
+        padding: 18px 24px;
+        border-radius: 12px;
+        font-size: 18px;
     }
 
     .nav-links a:hover {
