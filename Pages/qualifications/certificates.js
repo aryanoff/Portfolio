@@ -57,6 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Successfully completed a course on Node JS, focusing on backend JavaScript development, server setup, and modern server-side programming.",
             image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg",
             link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1786100696/WhatsApp_Image_2026-08-07_at_4.33.01_PM_ktagww.jpg"
+        },
+        {
+            title: "HTML with AI",
+            issuer: "Unstop",
+            category: "Web Development",
+            description: "Successfully completed the HTML with AI certification, mastering how to leverage artificial intelligence tools to structure, generate, and optimize semantic HTML code for modern responsive web development.",
+            image: "https://res.cloudinary.com/ams1rfsh/image/upload/v1788182980/Html_with_ai_n9ntdh.png",
+            link: "https://res.cloudinary.com/ams1rfsh/image/upload/v1788182980/Html_with_ai_n9ntdh.png"
         }
     ];
 
